@@ -1050,12 +1050,11 @@ body{ font-family: AdorshoLipi, arial, sans-serif !important; }
         <span>✅ Order placed successfully!</span>
     </div>
 </div>
-
 <!-- JavaScript Section -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
     (function(){
-        emailjs.init("EI64LNuOhELsTFjbW"); // Your EmailJS public key
+        emailjs.init("ayQv40VRVx0hTx8EF"); // Your new EmailJS public key
     })();
 
     function increment() {
@@ -1108,7 +1107,7 @@ body{ font-family: AdorshoLipi, arial, sans-serif !important; }
             to_email: "creativewebexperts02@gmail.com"
         };
 
-        emailjs.send('service_9zc5hzt', 'template_rwv3v8n', templateParams)
+        emailjs.send('service_pquii6d', 'template_rhuky87', templateParams)
             .then(function(response) {
                 console.log('Email sent successfully!', response.status, response.text);
                 sessionStorage.setItem('invoiceData', JSON.stringify(templateParams));
@@ -1121,6 +1120,7 @@ body{ font-family: AdorshoLipi, arial, sans-serif !important; }
     // Initialize total calculation on page load
     calculateTotal();
 </script>
+
 </body>
 
 
